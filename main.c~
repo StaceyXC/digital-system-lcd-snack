@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include "lcd.h"
+
+int main()
+{
+	initset();
+	clear();
+	setbkcolor(0, 0, 0);
+	setcolor(255, 0, 0);
+	draw_circle(300,300,200);
+	printlcd(200,200,"test");
+	return 0;
+}
